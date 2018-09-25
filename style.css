@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+#canvas{
+    background: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.actions{
+    position: fixed;
+    top: 2px;
+    left: 2px;
+    padding: 15px 20px 20px 10px;
+}
+.actions svg{
+    width: 2em;
+    height: 2em;
+    transition: all 0.3s;
+    margin: 0 8px;
+}
+.actions svg.active{
+    transform: scale(1.4);
+}
+
+.colors{
+    position: fixed;
+    top: 19px;
+    left: 196px;
+}
+.colors > li{
+    border-radius: 50%;
+}
+
+
+.backgroundColors{
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+}
+.backgroundColors > li {
+    border: 1px solid #666;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+}
+.backgroundColors.active{
+    box-shadow: 0 0 12px rgba(0,0,0,1);
+}
+
+#clear{
+    position: fixed;
+    right: 15px;
+    bottom: 24px;
+}
+
+.download > svg{
+    position: fixed;
+    right: 58px;
+    bottom: 15px;
+    width: 3.1em;
+    height: 3.1em;
+}
+
+ol > li {
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    margin: 0 8px 8px 8px;
+    float: left;
+    transition: all 0.3s;
+}
+ol > li.active{
+    box-shadow: 0 0 12px rgba(0,0,0,1);
+}
+ol > li.blue.active{
+    box-shadow: 0 0 12px rgba(57,166,193,1);
+}
+ol > li.green.active{
+    box-shadow: 0 0 12px rgba(84,167,40,1);
+}
+ol > li.orange.active{
+    box-shadow: 0 0 12px rgba(196,131,32,1);
+}
+
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: #9de7fb;
+}
+.orange{
+    background-color: #f6b451;
+}
+.green{
+    background-color: #85e353;
+}
+
+#canvas.pencil{
+    cursor: url("./pencil.png"), default;
+}
+#canvas.pen{
+    cursor: url("./pen.png"), default;
+}
+#canvas.eraser{
+    cursor: url("./eraser.png"), default;
+}

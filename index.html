@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="KEYWords" content="杨森画板">
+    <meta name="DEscription" content="杨森画板">
+    <meta name="Author" content="杨森">
+    <meta name="viewport" content="width=device-width, user-scalable=no ,initial-scale=1.0">
+    <title>杨森的画板</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/ham.jpg" media="screen">
+</head>
+<body>
+
+    <canvas id="canvas" class="pencil"></canvas>
+
+
+    <div class="actions" id="actions">
+        <svg id="pen1" class="icon active">
+            <use xlink:href="#icon-Pen"></use>
+        </svg>
+
+        <svg id="pen2" class="icon">
+            <use xlink:href="#icon-pencil"></use>
+        </svg>
+
+        <svg id="eraser" class="icon">
+            <use xlink:href="#icon-eraser"></use>
+        </svg>
+
+        <svg id="clear" class="icon">
+            <use xlink:href="#icon-garbage"></use>
+        </svg>
+
+        <a download class="download">
+            <svg class="icon">
+                <use xlink:href="#icon-download"></use>
+            </svg>
+        </a>
+    </div>
+
+    <ol class="colors clearfix">
+        <li id="black" class="black active"></li>
+        <li id="blue" class="blue"></li>
+        <li id="orange" class="orange"></li>
+        <li id="green" class="green"></li>
+    </ol>
+    <ol class="backgroundColors clearfix">
+        <li id="backWhite" class="white"></li>
+    </ol>
+
+
+
+
+<script src="main.js"></script>
+<script src="//at.alicdn.com/t/font_595021_nc0f6jp4mjx20529.js"></script>
+</body>
+</html>
